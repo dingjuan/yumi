@@ -1,0 +1,132 @@
+
+.tip_ok {
+    position: absolute;
+    top: 15px;
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background: url(../images/spt.png) no-repeat;
+    _background-image: url(../iamge/spt.8.png);
+    vertical-align: middle;
+    background-position: -122px -80px;
+    float: left;
+}
+
+.tip_no {
+    background: url(../images/form.png) no-repeat;
+    _background-image: url(../images/form.8.png);
+    color: #f20000;
+    padding-left: 24px;
+    background-position: -139px -204px;
+    margin-left: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+
+.disabled {
+    width: 200px;
+    height: 42px;
+    line-height: 42px;
+    background-color: #a8a8a8 !important;
+    border: 0;
+    border-width: 0;
+    color: #a1a1a1;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    cursor: default
+}
+
+.fancybox-skin {
+    background: #eb2a20 !important;
+}
+
+.sm_content {
+    min-width: 360px;
+    height: auto;
+    overflow: hidden;
+}
+
+.fancybox-close {
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    background: url(../images/dialog_new.png) no-repeat 5px 17px;
+    display: block;
+    cursor: pointer;
+}
+
+.sm_img {
+    background: url(../images/dialog_new.png) no-repeat 5px -163px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top: 22px;
+    margin-left: 35px;
+    float: left;
+}
+
+.sm_content .ms_txt {
+    margin: 40px 45px 0 30px;
+    color: #FFF;
+    font-size: 16px;
+    float: left;
+}
+
+.sidebar-menu .act {
+    display: none;
+}
+
+.icon_n1 {
+    height: 32px;
+    width: 32px;
+    display: block;
+    overflow: hidden;
+    background: url(../images/member-icon2.png) 0 0 no-repeat
+}
+
+.icon_n3 {
+    height: 32px;
+    width: 32px;
+    display: block;
+    overflow: hidden;
+    background: url(../images/member-icon2.png) -76px 0 no-repeat
+}
+
+.icon_n4 {
+    height: 32px;
+    width: 32px;
+    background: url(../images/member-icon2.png) -113px 0 no-repeat;
+    display: block;
+    overflow: hidden;
+}
+
+
+.tb_common{
+    width: 99%;
+}
+.tb_common td{
+  /*  width: 25%; */
+  height: 35px;
+   text-align: center;
+}
+.tb_common thead{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    color: #777;
+    background: #f6f7f7;
+    border-bottom-color: #e6e8e9;
+}
+.tb_common tbody td{
+    border-bottom: 1px solid #ccc;
+}    

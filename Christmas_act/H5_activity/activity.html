@@ -1,0 +1,97 @@
+<html lang="en">
+ <head>
+  <script type="text/javascript">
+var path = "/web/";
+</script> 
+  <link type="text/css" rel="stylesheet" href="CSS/jquery.mobile-1.4.2.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/basic.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/common.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/index.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/swiper.min.css" /> 
+  <script type="text/javascript" src="JS/jquery-1.8.3.min.js"></script> 
+  <script type="text/javascript" src="JS/base.js"></script> 
+  <script type="text/javascript" src="JS/common.js"></script> 
+  <script type="text/javascript" src="JS/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript" src="JS/jquery.flexslider-min1.js"></script> 
+  <script type="text/javascript" src="JS/jquery.mobile-1.4.2.min.js"></script> 
+  <script type="text/javascript" src="JS/TouchSlide.1.1.js"></script> 
+  <script type="text/javascript" src="JS/desencrypt.js"></script> 
+  <script type="text/javascript" src="JS/tripledes.js"></script> 
+  <script type="text/javascript" src="JS/mode-ecb.js"></script> 
+  <script type="text/javascript" src="JS/My97DatePicker/WdatePicker.js"></script> 
+  <script type="text/javascript" src="JS/global-1.1.0.min.js"></script> 
+  <script type="text/javascript" src="JS/page.js"></script> 
+  <script type="text/javascript">
+// è·åå½åæ¶é´
+function getNowTime(){
+var date = new Date();
+var month = date.getMonth() + 1;
+var strDate = date.getDate();
+if (month >= 1 && month <= 9) {
+month = "0" + month;
+}
+if (strDate >= 0 && strDate <= 9) {
+strDate = "0" + strDate;
+}
+var currentdate = date.getFullYear() + '-' + month + '-' + strDate
++ " " + date.getHours() + ':' + date.getMinutes()
++ ':' + date.getSeconds();
+return currentdate;
+}
+function toDate(obj, format) {
+var date = new Date();
+date.setTime(obj.time);
+date.setHours(obj.hours);
+date.setMinutes(obj.minutes);
+date.setSeconds(obj.seconds);
+if (format == undefined || format == null) {
+format = "yyyy-MM-dd hh:mm:ss";
+}
+return date.format(format);
+}
+// å¤æ­æ¯å¦ä¸ºç©º
+function isNotNull(val) {
+var flag = true;
+if (val == "" || val == null || val == undefined) {
+flag = false;
+}
+return flag;
+}
+</script>    
+  <meta charset="utf-8" /> 
+  <title>鱼米金服</title> 
+  <meta http-equiv="Expires" content="-1" /> 
+  <meta http-equiv="Pragma" content="no-cache" /> 
+  <meta http-equiv="Cache-Control" content="no-cache" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+ </head> 
+ <body> 
+  <div class="ui-page ui-page-theme-a ui-page-active invest-de" data-role="page"> 
+   <div class="header"> 
+    <a class="back_arr"  data-ajax="false"></a> 
+    <h1>圣诞活动</h1> 
+   </div> 
+   <!-- main start --> 
+   <div class="wrapper"> 
+    <!-- 鱼米金服投资详情--> 
+    <section> 
+     <div class="invest-debox" > 
+         <li >
+			<div class="slide">
+				<img src="images/h5_act.jpg" style="height:18.575rem;width:16rem">
+			</div>
+         </li>
+         <a class="s-invest2" id="tenderBtnSpan">预购从速</a> 
+     </div> 
+    </section> 
+
+   </div> 
+  </div> 
+
+ 
+  
+ </body>
+</html>

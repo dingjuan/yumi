@@ -1,0 +1,144 @@
+<html lang="en">
+ <head>
+  <script type="text/javascript">
+var path = "/web/";
+</script> 
+  <link type="text/css" rel="stylesheet" href="CSS/jquery.mobile-1.4.2.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/basic.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/common.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/index.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/dj.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/swiper.min.css" /> 
+  <script type="text/javascript" src="JS/jquery-1.8.3.min.js"></script> 
+  <script type="text/javascript" src="JS/base.js"></script> 
+  <script type="text/javascript" src="JS/common.js"></script> 
+  <script type="text/javascript" src="JS/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript" src="JS/jquery.flexslider-min1.js"></script> 
+  <script type="text/javascript" src="JS/jquery.mobile-1.4.2.min.js"></script> 
+  <script type="text/javascript" src="JS/TouchSlide.1.1.js"></script> 
+  <script type="text/javascript" src="JS/desencrypt.js"></script> 
+  <script type="text/javascript" src="JS/tripledes.js"></script> 
+  <script type="text/javascript" src="JS/mode-ecb.js"></script> 
+  <script type="text/javascript" src="JS/My97DatePicker/WdatePicker.js"></script> 
+  <script type="text/javascript" src="JS/global-1.1.0.min.js"></script> 
+  <script type="text/javascript" src="JS/page.js"></script> 
+  <script type="text/javascript" src="JS/dj.js"></script> 
+  <script type="text/javascript">
+// è·åå½åæ¶é´
+function getNowTime(){
+var date = new Date();
+var month = date.getMonth() + 1;
+var strDate = date.getDate();
+if (month >= 1 && month <= 9) {
+month = "0" + month;
+}
+if (strDate >= 0 && strDate <= 9) {
+strDate = "0" + strDate;
+}
+var currentdate = date.getFullYear() + '-' + month + '-' + strDate
++ " " + date.getHours() + ':' + date.getMinutes()
++ ':' + date.getSeconds();
+return currentdate;
+}
+function toDate(obj, format) {
+var date = new Date();
+date.setTime(obj.time);
+date.setHours(obj.hours);
+date.setMinutes(obj.minutes);
+date.setSeconds(obj.seconds);
+if (format == undefined || format == null) {
+format = "yyyy-MM-dd hh:mm:ss";
+}
+return date.format(format);
+}
+// å¤æ­æ¯å¦ä¸ºç©º
+function isNotNull(val) {
+var flag = true;
+if (val == "" || val == null || val == undefined) {
+flag = false;
+}
+return flag;
+}
+</script>    
+  <meta charset="utf-8" /> 
+  <title>快来抽取你的2017“新年签”~</title> 
+  <meta name="description" content="看看你的2017是怎样的" />
+  <meta http-equiv="Expires" content="-1" /> 
+  <meta http-equiv="Pragma" content="no-cache" /> 
+  <meta http-equiv="Cache-Control" content="no-cache" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+ </head> 
+ <body> 
+  <div class="ui-page ui-page-theme-a ui-page-active invest-de" data-role="page"> 
+  
+     <ul class="mainmenu">
+        <img src="images/bj.png" style="padding: 0px;margin: 0px;width: 100%;height: 100%; margin-left: 0px;position: absolute;overflow: hidden;display: block;vertical-align: middle;" />
+        <li id="1" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li>
+        <li id="2" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li>
+        <li id="3" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li>
+        <li id="4" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li>
+        <li id="5" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li>
+        <li id="6" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li>
+        <li id="7" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li>
+        <li id="8" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li>
+        <li id="9" class="imageD" onclick="clickPic()"><img src="images/1111.jpg" /></li> 
+
+         <img  id="10" src="images/2222.jpg" style="top:27%;margin: 0;padding: 0px;margin-left: 0%;width: 100%;display: none;position: absolute;" />
+       <img id="11" style="top:42%;margin: 0;padding: 0px;margin-left: 42%;width:16%;display: none;position: absolute;" />
+       <img id="12" style="top:69%;margin: 0;padding: 0px;left: 40%;width: 20%;display: none;position: absolute;" />
+ 
+       
+        <img src="images/di2.png" style="padding: 0px;margin: 0px;width: 100%;bottom: 0px;position: absolute;" />      
+    </ul>
+  </div> 
+  <script type="text/javascript">
+    $('.imageD').click(function(){
+      var imgid = diu_Randomize(1,9);
+      var div= $(".imageD");
+      var im=$("#10");
+      var im1=$("#11");
+      var im2=$("#12");
+     var val="images/" + imgid + "1.png";
+      im1.attr("src", val);
+      var val2="images/" + imgid + "2.png";
+      im2.attr("src", val2);
+   div.css("display","none");
+   im.css("display","block");
+   im2.css("opacity",".3");
+   im2.css("display","block");
+
+       var top=im.offset().top;
+      
+       var height=im.height();
+      
+        var height3=im1.height();
+       im1.css("top",top+(height-height3)*.24);
+       var height2=im2.height();
+       im2.css("top",top+(height-height2)*.68);
+   setTimeout(function(){
+     //然后再执行animate函数
+         im2.animate({left: "25%",width:"50%" ,opacity: "1"}, 1000);
+},100);
+
+    setInterval(function(){
+      $(im1).fadeIn(1000);
+
+      },200);
+ 
+  
+ });
+function diu_Randomize(b,e){   
+    if(!b && b!=0 || !e){return "?";}   
+    return Math.floor( ( Math.random() * e ) + b );   
+} 
+  </script>
+
+ 
+
+ 
+  
+ </body>
+</html>
