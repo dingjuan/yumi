@@ -76,9 +76,9 @@ body { width: 100%; margin: 0 auto; font-weight: 300; text-shadow: none !importa
 .list_lh li{ padding:-1%; padding:0;margin:0;height: 34%;width:98%;margin-left: 1%;top: 0%;}
 
 
-.timeDiv{ padding:0; padding:2.4%;color:rgba(241,241,241,.7); float:right;font-size: .6em; margin-right: 0%;height:15%;text-align: right;line-height: 0.8em;width: 55%;}
-.telNum{ padding:1.4%;color:rgba(255,255,255,.7); float:left;font-size: 0.9em; top: 8%;margin-left: 0%;height:30%;line-height: 1.1em;width:50%;}
-.hongbao{ padding:1.4%;color:rgba(255,255,255,.7);  float:right;font-size: 0.7em;top: 8%;margin-right: 3%;width: 35%;height:29%;line-height: .9em; text-align: right;}
+.timeDiv{ padding:0; padding:1.4%;color:rgba(241,241,241,.9); float:right;font-size: .6em; margin-right: 2%;height:15%;text-align: right;line-height: 0.8em;width: 55%;}
+.telNum{ padding:1.4%;color:rgba(255,255,255,.9); float:left;font-size: 0.9em; top: 8%;margin-left: 0%;height:30%;line-height: 1.1em;width:50%;}
+.hongbao{ padding:1.4%;color:rgba(255,255,255,.9);  float:right;font-size: 0.7em;top: 8%;margin-right: 3%;width: 35%;height:29%;line-height: .9em; text-align: right;}
 
 /*新春活动2*/
 /*背景图片*/
