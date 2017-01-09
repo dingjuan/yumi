@@ -1,0 +1,138 @@
+<html lang="en">
+ <head>
+  <script type="text/javascript">
+var path = "/web/";
+</script> 
+  <link type="text/css" rel="stylesheet" href="CSS/jquery.mobile-1.4.2.min.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/basic.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/common.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/index.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/dj.css" /> 
+  <link rel="stylesheet" type="text/css" href="CSS/swiper.min.css" /> 
+  <script type="text/javascript" src="JS/jquery-1.8.3.min.js"></script> 
+  <script type="text/javascript" src="JS/base.js"></script> 
+  <script type="text/javascript" src="JS/common.js"></script> 
+  <script type="text/javascript" src="JS/jquery-1.9.1.min.js"></script> 
+  <script type="text/javascript" src="JS/jquery.flexslider-min1.js"></script> 
+  <script type="text/javascript" src="JS/jquery.mobile-1.4.2.min.js"></script> 
+  <script type="text/javascript" src="JS/TouchSlide.1.1.js"></script> 
+  <script type="text/javascript" src="JS/desencrypt.js"></script> 
+  <script type="text/javascript" src="JS/tripledes.js"></script> 
+  <script type="text/javascript" src="JS/mode-ecb.js"></script> 
+  <script type="text/javascript" src="JS/My97DatePicker/WdatePicker.js"></script> 
+  <script type="text/javascript" src="JS/global-1.1.0.min.js"></script> 
+  <script type="text/javascript" src="JS/page.js"></script> 
+  <script type="text/javascript" src="JS/dj.js"></script> 
+  <script type="text/javascript" src="JS/scroll.js"></script> 
+
+  
+  <meta charset="utf-8" /> 
+  <title>快来抽取你的2017“新年签”~</title> 
+  <meta name="description" content="看看你的2017是怎样的" />
+  <meta http-equiv="Expires" content="-1" /> 
+  <meta http-equiv="Pragma" content="no-cache" /> 
+  <meta http-equiv="Cache-Control" content="no-cache" /> 
+  <meta name="format-detection" content="telephone=no" /> 
+  <meta name="apple-mobile-web-app-capable" content="yes" /> 
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+ </head> 
+ <body> 
+  <div class="ui-page ui-page-theme-a ui-page-active invest-de" data-role="page"> 
+     <ul class="mainmenu">
+        <img id="backIm" src="images/bg.jpg" />
+        <img src="images/input.png" id="phone_back"  />
+        <img  src="images/tel.png" id="phone_icon" />
+        <input class="myInput" type="tel" id="phone"  placeholder="请输入手机号码" />
+       
+        <div  id="tap_btn" >
+          <img src="images/b2.png" />
+        </div>
+        <div class="list_lh">
+           <ul>
+            <li >
+            	<div class="telNum">135＊＊＊＊5833</div>
+            	<div class="hongbao">20元现金红包</div>
+            	<div class="timeDiv">2016-12-28 22:20:15</div>
+            </li>
+            <li >
+            	<div class="telNum">158＊＊＊＊5815</div>
+            	<div class="hongbao">50元现金红包</div>
+            	<div class="timeDiv">2016-12-28 22:20:13</div>
+            </li>
+            <li >
+            	<div class="telNum">180＊＊＊＊5848</div>
+            	<div class="hongbao">10元现金红包</div>
+            	<div class="timeDiv">2016-12-28 22:20:10</div>
+            </li>
+            <li >
+            	<div class="telNum">170＊＊＊＊5852</div>
+            	<div class="hongbao">5元现金红包</div>
+            	<div class="timeDiv">2016-12-28 22:20:080</div>
+            </li>
+            <li >
+            	<div class="telNum">170＊＊＊＊5852</div>
+            	<div class="hongbao">5元现金红包</div>
+            	<div class="timeDiv">2016-12-28 22:20:080</div>
+            </li>
+            <li >
+            	<div class="telNum">170＊＊＊＊5852</div>
+            	<div class="hongbao">5元现金红包</div>
+            	<div class="timeDiv">2016-12-28 22:20:080</div>
+            </li>
+            <li >
+            	<div class="telNum">170＊＊＊＊5852</div>
+            	<div class="hongbao">5元现金红包</div>
+            	<div class="timeDiv">2016-12-28 22:20:080</div>
+            </li>
+            </ul>
+        </div>
+        <div  id="back2"  >
+         
+           <div id="hongbaoNum" >
+             您目前还有<u id="yellowNum">&nbsp;3&nbsp;</u>次抽奖机会
+           </div>
+           <div class="tap_btn2" id="tap_left" ><img src="images/share.png"/>
+           </div>
+           <div class="tap_btn2" id="tap_right" ><img src="images/invest.png"/>
+           </div>
+        </div>
+    </ul>
+
+  </div> 
+    <script type="text/javascript">
+    var HEIGHT = $('body').height();
+        $(window).resize(function() {
+            $('.mainmenu').height(HEIGHT);
+        });
+
+	$("#tap_btn").click(function(){
+    //根据后台返回的红包类型 选取图片  
+       var reviewHtml=" <img id='backIm2'  src='images/10M.png'>  ";
+       $("#back2").prepend(reviewHtml);
+     $("#back2").fadeIn(1000);
+    });
+    $(".tap_btn2").click(function(){
+
+     $("#back2").fadeOut(1000);
+      
+    });
+
+   $(document).ready(function(){
+
+     var doscroll = function(){
+     var $parent = $('.list_lh');
+     var $first = $parent.find('li:first');
+     var height = $first.height();
+     $first.animate({
+         marginTop: -height + 'px'
+         }, 500, function() {
+         $first.css('marginTop', 0).appendTo($parent);
+     });    
+    };
+    setInterval(function(){doscroll()}, 2000);
+  })
+
+</script>
+ </body>
+</html>
